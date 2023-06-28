@@ -10,28 +10,30 @@ import type { NextPage } from "next";
  * This triggers the UserOperation to be sent to the alt mempool, kicking off the EIP-4337 flow.
  */
 const Home: NextPage = () => {
-  return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Account Abstraction</h1>
-      <p className={styles.desc}>Mint an NFT from a smart contract wallet</p>
+    return (
+        <div className={styles.container}>
+            <h1 className={styles.title}>Account Abstraction</h1>
+            <p className={styles.desc}>
+                Mint an NFT from a smart contract wallet
+            </p>
 
-      {/* This button acts as a connect wallet button if one is not already connected. */}
-      <Web3Button
-        contractAddress="0x91B3Af7afd6B169121Dcce83d4d8377fD6E76285"
-        action={(contract) =>
-          // Call the "mintTo" function with the following metadata.
-          // Metadata is uploaded to IPFS and pinned before the transaction is sent.
-          contract.erc721.mint({
-            name: "NFT on my AA",
-            description: "This is an NFT on my AA",
-            image: "ipfs://Qmcny3J5yGpWjJsvR92DQAZcHYWLDep6GdgdKJTRxU1qyo",
-          })
-        }
-      >
-        Mint An NFT
-      </Web3Button>
-    </div>
-  );
+            {/* This button acts as a connect wallet button if one is not already connected. */}
+            <Web3Button
+                contractAddress="0xf443938B2D1fecEE94239Da4D17871797CD58e16"
+                action={(contract) =>
+                    // Call the "mintTo" function with the following metadata.
+                    // Metadata is uploaded to IPFS and pinned before the transaction is sent.
+                    contract.erc721.mint({
+                        name: "NFT on my AA",
+                        description: "This is an NFT on my AA",
+                        image: "ipfs://Qmcny3J5yGpWjJsvR92DQAZcHYWLDep6GdgdKJTRxU1qyo",
+                    })
+                }
+            >
+                Mint An NFT
+            </Web3Button>
+        </div>
+    );
 };
 
 export default Home;
