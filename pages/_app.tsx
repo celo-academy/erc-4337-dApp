@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             // Define that we only want to support Account Abstraction wallets aka Smart Wallets
             supportedWallets={[
                 smartWallet({
-                    // View my Factory Contract: https://thirdweb.com/mumbai/0x69608a6fE2e1Ce34eAcC4688502b2a2A1209EE2c
+                    // View my Factory Contract: https://thirdweb.com/celo-alfajores-testnet/0x7FDaA334E6A515dF22583c5dfe78B302a3dfE3F8
                     // Deploy your own Factory: https://thirdweb.com/thirdweb.eth/AccountFactory
                     factoryAddress:
                         "0x7FDaA334E6A515dF22583c5dfe78B302a3dfE3F8",
