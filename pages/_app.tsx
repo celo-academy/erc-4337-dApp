@@ -23,8 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     gasless: true,
 
                     // API Key from the thirdweb dashboard. (You'll want to keep yours a secret)
-                    thirdwebApiKey:
-                        "062d6f2ff548b8df07d2cc215d60df0d6ab17e19b6250c6f5d3fa53706b6888e41f34b51f9d7f73f956137b4ebaf4bff095aea43969eda40fb7ad713772e8242",
+                    thirdwebApiKey: process.env.THIRDWEB_API_KEY as string,
                 }),
             ]}
         >
