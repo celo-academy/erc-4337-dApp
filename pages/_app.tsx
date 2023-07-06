@@ -3,7 +3,7 @@ import { ThirdwebProvider, smartWallet } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import { CeloAlfajoresTestnet } from "@thirdweb-dev/chains";
 
-// Mumbai is where our wallet factory and NFT collection are deployed
+// Celo Alfajores is where our wallet factory and NFT collection are deployed
 const activeChain = "celo-alfajores-testnet";
 
 function MyApp({ Component, pageProps }: AppProps) {
