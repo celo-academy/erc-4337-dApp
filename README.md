@@ -40,7 +40,7 @@ yarn install
 
 ### Step 1: Start the App
 
-#### `.env` setup in
+#### `.env` setup
 
 -   Create a `.env` file and copy the contents of `.env.example` into it
 -   Get `THIRDWEB_API_KEY` from the [ThirdWeb](https://thirdweb.com/settings) Dashboard
